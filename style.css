@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.df{
+ display: flex;
+}
+.dg{
+    display: grid;
+}
+.sb{
+    justify-content: space-between;
+}
+.column{
+    flex-direction: column;
+}
+img{
+    max-width:100px;
+}
+.one{
+    border-style: solid;
+}
