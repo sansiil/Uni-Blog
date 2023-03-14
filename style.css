@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
 }
+body{
+    padding:2% 7%;
+}
 .df{
  display: flex;
 }
@@ -21,4 +24,30 @@ img{
 }
 .one{
     border-style: solid;
+}
+.ham{
+    display: none;
+}
+a{
+    color:grey;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+   gap:17px;
+   align-items: center;
+}
+button{
+   background:orange;
+   font-weight: 600;
+   padding:13px 17px;
+   border:none;
+   font-size: 1.1em;
+   border-radius: 5px;
+   cursor:pointer;
+}
+header{
+    align-items: center;
 }
