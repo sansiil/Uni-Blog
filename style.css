@@ -20,10 +20,7 @@ body{
     flex-direction: column;
 }
 img{
-    max-width:100px;
-}
-.one{
-    border-style: solid;
+    max-width: 90px;
 }
 .ham{
     display: none;
@@ -50,4 +47,78 @@ button{
 }
 header{
     align-items: center;
+}
+.top{
+    padding-top: 2.4%;
+}
+.tleft{
+    width:33%;
+}
+.tleft img{
+    max-width:100%;
+}
+.tright{
+    max-width:63%;
+}
+h1{
+    font-size: 1.9em;
+    line-height: 1.2em;
+}
+p{
+    color:grey;
+    font-size: 0.9em;
+}
+.tright p{
+    margin:2% 0;
+    max-width: 80%;
+}
+.tright{
+    max-height: fit-content;
+}
+.tright img{
+    max-width:100%;
+    max-height: fit-content;
+}
+.trd{
+    max-width:22%;
+    align-items: center;
+    max-height: fit-content;
+}
+.trd figure{
+    max-width:25%;
+}
+.name{
+    font-size: 0.88em;
+}
+.name p{
+    font-size: 0.88em;
+    max-width: 100%;
+    margin:0;
+}
+.threeitems{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3%;
+    padding:4% 0;
+}
+.threeitems figure{
+    max-width: 100%;
+}
+img{
+    max-width:100%;
+}
+h3{
+    font-size: 1.7em;
+    max-width: 70%;
+    line-height: 1.2em;
+}
+.one figure:last-child figure{
+    max-width:12.7%;
+}
+.one figure:last-child{
+    align-items: center;
+    gap:2.7%;
+    margin-top: 2.3%;
+}
+footer{
+    align-items:center;
 }
