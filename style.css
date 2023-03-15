@@ -60,6 +60,10 @@ header{
 h1{
     font-size: 1.9em;
     line-height: 1.2em;
+    color:black;
+}
+b{
+    color:black;
 }
 p{
     color:grey;
@@ -94,6 +98,7 @@ h3{
     font-size: 1.7em;
     max-width: 70%;
     line-height: 1.2em;
+    color:black;
 }
 .one .trd{
     margin-top: 2.3%;
@@ -101,7 +106,10 @@ h3{
 footer{
     align-items:center;
 }
-@media (max-width:800px){
+.threeitems p{
+    margin:2% 0;
+}
+@media (max-width:970px){
     nav{
         display:none;
     }
@@ -144,4 +152,24 @@ footer{
     h1{
         font-size: 1.5em;
     }
+}
+@media (min-width:550px) and (max-width:1270px){
+    nav{
+        display: block;
+    }
+    .ham{
+        display: none;
+    }
+    footer{
+        flex-direction: row;
+        align-items: center;
+    }
+    h1,h3{
+        max-width:100%;
+    }
+    figure img{
+        max-height:200px;
+        width: 100%;
+    }
+    
 }
