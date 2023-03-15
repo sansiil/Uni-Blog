@@ -20,7 +20,7 @@ body{
     flex-direction: column;
 }
 img{
-    max-width: 90px;
+    max-width:100%;
 }
 .ham{
     display: none;
@@ -54,9 +54,6 @@ header{
 .tleft{
     width:33%;
 }
-.tleft img{
-    max-width:100%;
-}
 .tright{
     max-width:63%;
 }
@@ -72,20 +69,13 @@ p{
     margin:2% 0;
     max-width: 80%;
 }
-.tright{
-    max-height: fit-content;
-}
-.tright img{
-    max-width:100%;
-    max-height: fit-content;
-}
 .trd{
-    max-width:22%;
     align-items: center;
-    max-height: fit-content;
+    gap:9px;
+    max-width: fit-content;
 }
 .trd figure{
-    max-width:25%;
+    max-width:40px;
 }
 .name{
     font-size: 0.88em;
@@ -98,27 +88,60 @@ p{
 .threeitems{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3%;
-    padding:4% 0;
-}
-.threeitems figure{
-    max-width: 100%;
-}
-img{
-    max-width:100%;
+    padding:5% 0;
 }
 h3{
     font-size: 1.7em;
     max-width: 70%;
     line-height: 1.2em;
 }
-.one figure:last-child figure{
-    max-width:12.7%;
-}
-.one figure:last-child{
-    align-items: center;
-    gap:2.7%;
+.one .trd{
     margin-top: 2.3%;
 }
 footer{
     align-items:center;
+}
+@media (max-width:800px){
+    nav{
+        display:none;
+    }
+    .ham{
+        display:block;
+    }
+    .top{
+        flex-direction: column;
+        padding:20px 0;
+    }
+    .tleft,.tright{
+        width:100%;
+        max-width: 100%;
+    }
+    .threeitems{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: start;
+        padding:10px 0;
+    }
+    .tleft{
+        width: 100%;
+    }
+    .tright{
+        max-width:100%;
+    }
+    .tright h1,.tright p{
+        width:100%;
+        max-width: 100%;
+    }
+    .trd{
+        max-width: 64%;
+    }
+    h3{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 1.5em;
+    }
 }
